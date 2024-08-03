@@ -8,8 +8,9 @@ st.subheader("Find your next favourite book here")
 
 #function to call the anthropic API, get response for the question submitted
 def anthropic_output(question):
+    os.environ['API_KEY'] == st.secrets['API_KEY']
     client = anthropic.Anthropic(
-        api_key=os.environ.get("API_KEY")
+        api_key= st.secrets["API_KEY"]
     )
 
     message = client.messages.create(
