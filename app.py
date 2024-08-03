@@ -1,7 +1,5 @@
 import streamlit as st
 import anthropic
-import textwrap
-import re
 import os
 
 #title of the application
@@ -54,4 +52,3 @@ with st.form("my_form"):
 
         else:
             st.markdown("Please enter the input fields")
-
