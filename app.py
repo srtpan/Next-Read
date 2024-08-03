@@ -1,6 +1,7 @@
 import streamlit as st
 import anthropic
 import os
+import time
 
 #title of the application
 st.header("📖 Next Read")
@@ -41,15 +42,24 @@ with st.form("my_form"):
     submitted = st.form_submit_button("Submit")
 
     if submitted:
+        progress_text = "Searching the library for you..."
+        my_bar = st.progress(0, text=progress_text)
 
+        for percent_complete in range(100):
+            time.sleep(0.01)
+            my_bar.progress(percent_complete + 1, text=progress_text)
         if pt2=="":
             text_response= anthropic_output(f"Hi, I love {pt1}, can you please recommend me some books?")
             # text_response_markdown = text_to_markdown(text_response)
             st.markdown(text_response.text)
+            time.sleep(1)
+            my_bar.empty()
         
         elif pt2!="":
             text_response= anthropic_output(f"Hi, I love {pt1}, and loved the book {pt2} can you please recommend me some books?")
             st.markdown(text_response.text)
+            time.sleep(1)
+            my_bar.empty()
 
         else:
             st.markdown("Please enter the input fields")
