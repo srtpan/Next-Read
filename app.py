@@ -67,6 +67,6 @@ with st.form("my_form"):
             time.sleep(1)
             my_bar.empty()
 
-        #if nothing entered
+        #if nothing entered then this is displayed
         else:
             st.markdown("Please enter the input fields")
