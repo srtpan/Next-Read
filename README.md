@@ -30,7 +30,7 @@ Next Read uses the Anthropic API to analyze your inputs and generate personalize
 
 ## Getting Started
 
-### To install 
+### Installation Guide
 
 1. Clone the GitHub repository
 2. Set up API Key on Antropic AI's portal (https://console.anthropic.com/settings/keys)
@@ -42,5 +42,3 @@ Next Read uses the Anthropic API to analyze your inputs and generate personalize
 ## Contributing
 
 You are most welcome contributions to Next Read! If you have suggestions for improvements or encounter any issues, please feel free to open an issue or submit a pull request.
-
-Start your next reading adventure with Next Read – where every book is a new world waiting to be explored!
