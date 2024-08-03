@@ -50,7 +50,6 @@ with st.form("my_form"):
             my_bar.progress(percent_complete + 1, text=progress_text)
         if pt2=="":
             text_response= anthropic_output(f"Hi, I love {pt1}, can you please recommend me some books?")
-            # text_response_markdown = text_to_markdown(text_response)
             st.markdown(text_response.text)
             time.sleep(1)
             my_bar.empty()
