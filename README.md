@@ -26,7 +26,7 @@ Whether you're a voracious reader looking for your next page-turner or someone t
 
 ## How It Works
 
-Next Read uses the Anthropic API to analyze your inputs and generate personalized book recommendations. You provide a brief description of the book you wanna read next, like "A thriller set in a church" or "A murder mystery set in abookstore", optionally provide a book you have read in the genre which will enhance the recommendation provided. 
+Next Read uses the Anthropic API to analyze your inputs and generate personalized book recommendations. You provide a brief description of the book you wanna read next, like "A thriller set in a church" or "A murder mystery set in a bookstore", optionally provide a book you have read in the genre which will enhance the recommendation provided. 
 
 ## Getting Started
 
@@ -38,6 +38,12 @@ Next Read uses the Anthropic API to analyze your inputs and generate personalize
 4. Supplement your Anthropic API Key using terminal and depending on Windows/Linux/macOS, follow the instructions provided here (https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety) to provide api key as an environment variable 
 5. Run your app by running: streamlit run app.py
 6. Enjoy the recommendations
+
+### Prompt Engineering Guide
+
+Inside the guide, you can control the responses using "System" and "User" instrcutions. Under "System", you provide details about the role of the AI. According to Anthropic, *"Use the system parameter to set Claude’s role. Put everything else, like task-specific instructions, in the user turn instead."*
+
+In the "User" you can further tune the prompt being provided by the user to ensure accurate, tailored and focussed responses from Calude. You can test a couple of combinations of prompts to get the results to your liking. 
 
 ## Contributing
 
